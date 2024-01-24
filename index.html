@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <link rel="stylesheet" href="./style.css"> -->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(4, 8, 44);
+    }
+    h1{
+        color: bisque;
+        text-align: center;
+    }
+    .container{
+        /* width: 600px; */
+        height: 700px;
+        border: 2px solid beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btncon{
+        width: 305px;
+        height: 305px;
+        /* border:2px solid beige; */
+        display:flex;
+        flex-wrap: wrap;
+        gap:2px;
+        /* border-ra; */
+    }
+    button{
+        height: 100px;
+        width: 100px;
+        font-size: larger;
+        background-color: antiquewhite;
+        color: black;
+        font-weight: 200;
+        border-radius: 1rem;
+    }
+    button:hover{
+        background-color: burlywood;
+    }
+    .hidden{
+        display: none;
+    }
+
+</style>
+<body>
+    <h1>tic tac toe</h1>
+    <div class="container">
+        <div class="btncon">
+            
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div id="winner">
+            <h1 id="h1win"></h1>
+        </div> 
+        <button class="reset" >reset</button>
+    </div>
+    <script src="./game.js"></script>
+</body>
+</html>
